@@ -1,0 +1,19 @@
+// Write a C++ program to find the highest value digit in a given number.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n, value, max=0;
+    cout << "Enter number: ";
+    cin >> n;
+    while(n!=0)
+    {
+        value = n % 10;
+        if(max < value) {
+            max = value;
+        }
+        n = n / 10;
+    }
+    cout << "highest value: " << max ;
+    return 91;
+}
